@@ -1,4 +1,4 @@
-# Some examples of objects and methods.
+# Some examples of objects and methods, inspired by exercises in chapter 17 of the book Think Python by Allen Downey
 
 class Time(object):
     """ Represents a time """
@@ -49,7 +49,7 @@ class Time(object):
         
 def int2time(seconds):
     """ Takes an integer and returns the Time object representing that amount
-        of settings """
+        of seconds """
     time = Time()
     time.hour, minutes = divmod(seconds, 3600)
     time.minute, time.second = divmod(minutes, 60)
